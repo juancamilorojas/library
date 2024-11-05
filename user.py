@@ -1,4 +1,4 @@
-class user:
+class User:
     def __init__(self, name, user_id):
         self.name = name 
         self.user_id = user_id
@@ -16,6 +16,6 @@ class user:
         if book.title in self.borrowed_books: 
             book.return_book()
             self.borrowed_books.remove(book.title)
-            print(f'El usuario {self.user_id} ha retornado {book.name}')
+            print(f'El usuario {self.user_id} ha retornado {book.title}')
         else: 
             print(f'El usuario {self.user_id} no ha prestado el libro {book.title}')
