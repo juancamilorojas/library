@@ -14,5 +14,4 @@ library = Library()
 library.add_book(book_1)
 library.add_book(book_2)
 library.register_user(user_0)
-
-print('funciona')
+library.show_available_books()
